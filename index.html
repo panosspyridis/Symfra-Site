@@ -143,20 +143,21 @@ nav.tabs button:focus-visible{outline:2px solid var(--blue);outline-offset:2px;}
 
 /* members */
 .members{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
-.member{background:var(--paper);border:1px solid var(--rule);padding:24px;}
+.member{background:var(--paper);border:1px solid var(--rule);padding:24px;display:flex;flex-direction:column;}
 .member .ini{
   width:52px;height:52px;border-radius:50%;background:var(--mist);
   display:flex;align-items:center;justify-content:center;margin-bottom:14px;
   font-family:'Montserrat',sans-serif;font-weight:600;color:var(--green);font-size:1rem;
+  flex:0 0 auto;
 }
 .member:nth-child(3n+2) .ini{color:var(--blue);}
 .member h3{font-size:1rem;margin-bottom:2px;}
 .member .role{font-family:'Montserrat',sans-serif;font-size:.82rem;color:var(--muted);margin-bottom:6px;}
-.member .inst{font-size:.9rem;color:var(--muted);margin:0;}
+.member .inst{font-size:.9rem;color:var(--muted);margin:0 0 12px;}
 .member .country{
   font-family:'Montserrat',sans-serif;font-size:.74rem;font-weight:600;
   letter-spacing:.06em;text-transform:uppercase;color:var(--blue);
-  margin:12px 0 0;padding-top:11px;border-top:1px solid var(--rule);
+  margin:auto 0 0;padding-top:11px;border-top:1px solid var(--rule);
 }
 .member.tbc .country{color:var(--muted);}
 
@@ -433,7 +434,7 @@ footer p{color:#93A1A4;font-size:.92rem;max-width:42ch;margin:16px 0 0;}
         <li>Researchers in civil, environmental, geotechnical, hydraulic, transport, materials, urban, ecological and social sciences.</li>
         <li>Infrastructure owners and operators across transport, water, energy, public buildings and communications.</li>
         <li>Public authorities, municipalities, regional administrations and civil protection agencies.</li>
-        <li>Engineering consultancies, contractors, technology providers, NbS suppliers and start-ups.</li>
+        <li>Engineering consultancies, contractors, technology providers and start-ups.</li>
         <li>Policy makers, standardisation bodies, financing institutions, insurers and procurement authorities.</li>
         <li>NGOs, community organisations, Living Labs, students and early-career researchers.</li>
       </ul>
@@ -454,19 +455,19 @@ footer p{color:#93A1A4;font-size:.92rem;max-width:42ch;margin:16px 0 0;}
         <h3 class="group-head">Research and academia</h3>
         <p class="group-note">Universities, research institutes and laboratories across the four conference themes.</p>
         <div class="members">
-          <div class="member tbc">
-            <div class="ini">TBC</div>
-            <h3>To be confirmed</h3>
+          <div class="member">
+            <div class="ini">PS</div>
+            <h3>Panos Spyridis</h3>
             <div class="role">Committee member</div>
-            <p class="inst">Department, university or institute</p>
-            <p class="country">Country</p>
+            <p class="inst">Chair of Concrete Structures and Infrastructures Engineering, Faculty of Agriculture, Civil and Environmental Engineering, University of Rostock</p>
+            <p class="country">Germany</p>
           </div>
-          <div class="member tbc">
-            <div class="ini">TBC</div>
-            <h3>To be confirmed</h3>
+          <div class="member">
+            <div class="ini">VK</div>
+            <h3>Violetta Kytinou</h3>
             <div class="role">Committee member</div>
-            <p class="inst">Department, university or institute</p>
-            <p class="country">Country</p>
+            <p class="inst">Department of Civil Engineering, Democritus University of Thrace</p>
+            <p class="country">Greece</p>
           </div>
           <div class="member tbc">
             <div class="ini">TBC</div>
@@ -480,14 +481,14 @@ footer p{color:#93A1A4;font-size:.92rem;max-width:42ch;margin:16px 0 0;}
 
       <div class="group">
         <h3 class="group-head">Industry stakeholders</h3>
-        <p class="group-note">Consultancies, contractors, technology providers, materials and NbS suppliers, and asset operators.</p>
+        <p class="group-note">Consultancies, contractors, technology providers, materials suppliers, and asset operators.</p>
         <div class="members">
-          <div class="member tbc">
-            <div class="ini">TBC</div>
-            <h3>To be confirmed</h3>
+          <div class="member">
+            <div class="ini">ME</div>
+            <h3>Mohamed Eldessouki</h3>
             <div class="role">Committee member</div>
-            <p class="inst">Company or industry body</p>
-            <p class="country">Country</p>
+            <p class="inst">Digitalization Innovation Center (DigInnoCent s.r.o.)</p>
+            <p class="country">Czech Republic</p>
           </div>
           <div class="member tbc">
             <div class="ini">TBC</div>
