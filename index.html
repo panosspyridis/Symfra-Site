@@ -145,10 +145,14 @@ nav.tabs button:focus-visible{outline:2px solid var(--blue);outline-offset:2px;}
 .members{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
 .member{background:var(--paper);border:1px solid var(--rule);padding:24px;display:flex;flex-direction:column;}
 .member .ini{
-  width:52px;height:52px;border-radius:50%;background:var(--mist);
+  width:64px;height:64px;border-radius:50%;background:var(--mist);
   display:flex;align-items:center;justify-content:center;margin-bottom:14px;
   font-family:'Montserrat',sans-serif;font-weight:600;color:var(--green);font-size:1rem;
   flex:0 0 auto;
+}
+.member .photo{
+  width:64px;height:64px;border-radius:50%;object-fit:cover;
+  display:block;margin-bottom:14px;flex:0 0 auto;background:var(--mist);
 }
 .member:nth-child(3n+2) .ini{color:var(--blue);}
 .member h3{font-size:1rem;margin-bottom:2px;}
@@ -456,14 +460,14 @@ footer p{color:#93A1A4;font-size:.92rem;max-width:42ch;margin:16px 0 0;}
         <p class="group-note">Universities, research institutes and laboratories across the four conference themes.</p>
         <div class="members">
           <div class="member">
-            <div class="ini">PS</div>
+            <img class="photo" src="assets/people/panos-spyridis.jpg" alt="" width="64" height="64" loading="lazy">
             <h3>Panos Spyridis</h3>
             <div class="role">Committee member</div>
             <p class="inst">Chair of Concrete Structures and Infrastructures Engineering, University of Rostock</p>
             <p class="country">Germany</p>
           </div>
           <div class="member">
-            <div class="ini">VK</div>
+            <img class="photo" src="assets/people/violetta-kytinou.jpg" alt="" width="64" height="64" loading="lazy">
             <h3>Violetta Kytinou</h3>
             <div class="role">Committee member</div>
             <p class="inst">Department of Civil Engineering, Democritus University of Thrace</p>
@@ -484,7 +488,7 @@ footer p{color:#93A1A4;font-size:.92rem;max-width:42ch;margin:16px 0 0;}
         <p class="group-note">Consultancies, contractors, technology providers, materials suppliers, and asset operators.</p>
         <div class="members">
           <div class="member">
-            <div class="ini">ME</div>
+            <img class="photo" src="assets/people/mohamed-eldessouki.jpg" alt="" width="64" height="64" loading="lazy">
             <h3>Mohamed Eldessouki</h3>
             <div class="role">Committee member</div>
             <p class="inst">Digitalization Innovation Center (DigInnoCent s.r.o.)</p>
