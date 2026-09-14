@@ -154,6 +154,19 @@ nav.tabs button:focus-visible{outline:2px solid var(--blue);outline-offset:2px;}
 .member .role{font-family:'Montserrat',sans-serif;font-size:.82rem;color:var(--muted);margin-bottom:6px;}
 .member .inst{font-size:.9rem;color:var(--muted);margin:0;}
 
+/* committee groups */
+.group{margin-top:54px;}
+.block-head + .group{margin-top:0;}
+.group-head{
+  font-size:1.2rem;line-height:1.25;margin:0 0 4px;
+  padding-left:14px;border-left:3px solid var(--green);
+}
+.group + .group .group-head{border-left-color:var(--blue);}
+.group + .group + .group .group-head{border-left-color:var(--slate);}
+.group-note{margin:0 0 22px;padding-left:17px;font-size:.94rem;}
+.member.tbc .ini{color:var(--muted);font-size:.82rem;letter-spacing:.04em;}
+.member.tbc h3{color:var(--muted);}
+
 /* conference */
 .conf-hero{
   background:var(--slate);color:#EAF0EE;padding:56px 48px;position:relative;overflow:hidden;
@@ -259,6 +272,7 @@ footer p{color:#93A1A4;font-size:.92rem;max-width:42ch;margin:16px 0 0;}
     <button class="menu-toggle" aria-expanded="false" onclick="toggleMenu()">Menu</button>
     <nav class="tabs" role="tablist" id="tabnav">
       <button role="tab" aria-selected="true"  data-tab="about"      onclick="showTab('about')">About</button>
+      <button role="tab" aria-selected="false" data-tab="committee"  onclick="showTab('committee')">Committee</button>
       <button role="tab" aria-selected="false" data-tab="conferences" onclick="showTab('conferences')">Conferences</button>
       <button role="tab" aria-selected="false" data-tab="news"       onclick="showTab('news')">News</button>
       <button role="tab" aria-selected="false" data-tab="contact"    onclick="showTab('contact')">Contact</button>
@@ -417,6 +431,93 @@ footer p{color:#93A1A4;font-size:.92rem;max-width:42ch;margin:16px 0 0;}
         <li>Policy makers, standardisation bodies, financing institutions, insurers and procurement authorities.</li>
         <li>NGOs, community organisations, Living Labs, students and early-career researchers.</li>
       </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COMMITTEE ============ -->
+<section class="panel" id="committee" role="tabpanel">
+  <div class="block">
+    <div class="wrap">
+      <div class="block-head">
+        <h2>Committee</h2>
+        <p>The committee brings research, industry and the public sector together, so that each perspective shapes both the direction of the community and the conference programme. Entries marked TBC are still being confirmed.</p>
+      </div>
+
+      <div class="group">
+        <h3 class="group-head">Research and academia</h3>
+        <p class="group-note">Universities, research institutes and laboratories across the four conference themes.</p>
+        <div class="members">
+          <div class="member tbc">
+            <div class="ini">TBC</div>
+            <h3>To be confirmed</h3>
+            <div class="role">Committee member</div>
+            <p class="inst">University or research institute · Country</p>
+          </div>
+          <div class="member tbc">
+            <div class="ini">TBC</div>
+            <h3>To be confirmed</h3>
+            <div class="role">Committee member</div>
+            <p class="inst">University or research institute · Country</p>
+          </div>
+          <div class="member tbc">
+            <div class="ini">TBC</div>
+            <h3>To be confirmed</h3>
+            <div class="role">Committee member</div>
+            <p class="inst">University or research institute · Country</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="group">
+        <h3 class="group-head">Industry stakeholders</h3>
+        <p class="group-note">Consultancies, contractors, technology providers, materials and NbS suppliers, and asset operators.</p>
+        <div class="members">
+          <div class="member tbc">
+            <div class="ini">TBC</div>
+            <h3>To be confirmed</h3>
+            <div class="role">Committee member</div>
+            <p class="inst">Company or industry body · Country</p>
+          </div>
+          <div class="member tbc">
+            <div class="ini">TBC</div>
+            <h3>To be confirmed</h3>
+            <div class="role">Committee member</div>
+            <p class="inst">Company or industry body · Country</p>
+          </div>
+          <div class="member tbc">
+            <div class="ini">TBC</div>
+            <h3>To be confirmed</h3>
+            <div class="role">Committee member</div>
+            <p class="inst">Company or industry body · Country</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="group">
+        <h3 class="group-head">Public sector</h3>
+        <p class="group-note">Public authorities, municipalities, regional administrations, civil protection agencies and standardisation bodies.</p>
+        <div class="members">
+          <div class="member tbc">
+            <div class="ini">TBC</div>
+            <h3>To be confirmed</h3>
+            <div class="role">Committee member</div>
+            <p class="inst">Authority, agency or operator · Country</p>
+          </div>
+          <div class="member tbc">
+            <div class="ini">TBC</div>
+            <h3>To be confirmed</h3>
+            <div class="role">Committee member</div>
+            <p class="inst">Authority, agency or operator · Country</p>
+          </div>
+          <div class="member tbc">
+            <div class="ini">TBC</div>
+            <h3>To be confirmed</h3>
+            <div class="role">Committee member</div>
+            <p class="inst">Authority, agency or operator · Country</p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -607,6 +708,7 @@ footer p{color:#93A1A4;font-size:.92rem;max-width:42ch;margin:16px 0 0;}
       </div>
       <div class="foot-links">
         <a href="#" onclick="showTab('about');return false;">About</a>
+        <a href="#" onclick="showTab('committee');return false;">Committee</a>
         <a href="#" onclick="showTab('conferences');return false;">Conferences</a>
         <a href="#" onclick="showTab('news');return false;">News</a>
         <a href="#" onclick="showTab('contact');return false;">Contact</a>
@@ -649,7 +751,7 @@ function sendMail(){
 // open the tab named in the URL hash, if any
 (function(){
   var h = (location.hash||'').replace('#','');
-  if(['about','conferences','news','contact'].indexOf(h) > -1){ showTab(h); }
+  if(['about','committee','conferences','news','contact'].indexOf(h) > -1){ showTab(h); }
 })();
 </script>
 

@@ -37,6 +37,10 @@ git push
 
 ## Content still to fill in
 
-- Member names, roles and institutions (About → Members) — currently placeholders
+- Committee names and institutions (Committee) — nine `TBC` cards across the three
+  groups. Replace the text and drop the `tbc` class from the card's `<div>`; that
+  restores the normal green/blue initials styling.
+- Member names, roles and institutions (About → Members) — currently placeholders,
+  and overlapping with the Committee page
 - Conference key dates (Conferences → Key dates) — currently "TBC"
 - News entries — currently placeholders
