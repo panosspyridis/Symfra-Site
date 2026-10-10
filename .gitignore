@@ -2,3 +2,6 @@
 Thumbs.db
 *.swp
 .claude/
+
+# outreach letters and recipient lists: never publish (site is served from repo root)
+outreach/
